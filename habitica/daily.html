@@ -4,8 +4,8 @@
             userid: {type: "text"},
             apikey: {type: "password"}
         },
-        category: 'function',
-        color: '#a6bbcf',
+        category: 'output',
+        color: '#D8BFD8',
         defaults: {
             taskid: {value: ""},
             userid: {value: ""},
@@ -13,7 +13,8 @@
         },
         inputs: 1,
         outputs: 1,
-        icon: "file.png",
+        icon: "habitica-logo.png",
+        align: 'right',
         label: function () {
             return this.taskid || "complete-daily";
         }

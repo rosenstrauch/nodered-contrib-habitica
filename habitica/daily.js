@@ -1,7 +1,7 @@
 var Habitica = require('habitica');
 var api = new Habitica({
 
-})
+});
 
 module.exports = function (RED) {
     function completeDailyNode(config) {
@@ -17,7 +17,7 @@ module.exports = function (RED) {
             api.setOptions({
                 id: this.userid,
                 apiToken: this.apikey
-            })
+            });
 
 
             return api.post('/tasks/' + this.taskid + '/score/up').then((resolve) => {
