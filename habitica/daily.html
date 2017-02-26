@@ -1,0 +1,38 @@
+<script type="text/javascript">
+    RED.nodes.registerType('complete-daily', {
+        credentials: {
+            userid: {type: "text"},
+            apikey: {type: "password"}
+        },
+        category: 'function',
+        color: '#a6bbcf',
+        defaults: {
+            taskid: {value: ""},
+            userid: {value: ""},
+            apikey: {value: ""},
+        },
+        inputs: 1,
+        outputs: 1,
+        icon: "file.png",
+        label: function () {
+            return this.taskid || "complete-daily";
+        }
+    });
+</script>
+
+<script type="text/x-red" data-template-name="complete-daily">
+    <div class="form-row">
+        <label for="node-input-userid"><i class="icon-tag"></i> userid</label>
+        <input type="text" id="node-input-userid" placeholder="userid">
+        <label for="node-input-apikey"><i class="icon-tag"></i> apikey</label>
+        <input type="text" id="node-input-apikey" placeholder="apikey">
+        <label for="node-input-taskid"><i class="icon-tag"></i> taskid</label>
+        <input type="text" id="node-input-taskid" placeholder="taskid">
+    </div>
+
+</script>
+
+<script type="text/x-red" data-help-name="complete-daily">
+    <p>A simple node that can mark a daily as done</p>
+
+</script>

@@ -1,0 +1,19 @@
+{
+  "name": "nodered_habitica",
+  "version": "1.0.0",
+  "description": "trigger completion of dailies",
+  "main": "habitica/daily.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "node-red": {
+    "nodes": {
+      "sample": "habitica/daily.js"
+    }
+  },
+  "license": "ISC",
+  "dependencies": {
+    "habitica": "^4.0.0"
+  }
+}
