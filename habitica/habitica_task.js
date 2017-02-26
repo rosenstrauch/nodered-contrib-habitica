@@ -22,23 +22,23 @@ module.exports = function (RED) {
 
             return api.post('/tasks/' + this.taskid + '/score/up').then((resolve) => {
 
-                console.log('tried to post to '+ this.taskid)
+                console.log('tried to post to '+ this.taskid);
 
             }).catch((err) => {
                 if (err instanceof Habitica.ApiError) {
                 // likely a validation error from
                 // the API request
-                console.log(err.message)
+                console.log(err.message);
             } else if (err instanceof Habitica.UnknownConnectionError) {
                 // either the Habitica API is down
                 // or there is no internet connection
-                console.log(err.originalError)
+                console.log(err.originalError);
             } else {
                 // there is something wrong with your integration
                 // such as a syntax error or other problem
                 console.log(err)
             }
-        })
+        });
 
 
 

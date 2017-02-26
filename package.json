@@ -1,7 +1,10 @@
 {
-  "name": "nodered_habitica_task",
+  "name": "node-red-contrib-habitica",
   "version": "1.0.0",
   "description": "trigger completion of dailies",
+  "keywords": [
+    "node-red"
+  ],
   "main": "habitica/task.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
