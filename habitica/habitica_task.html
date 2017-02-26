@@ -1,5 +1,5 @@
 <script type="text/javascript">
-    RED.nodes.registerType('complete-daily', {
+    RED.nodes.registerType('score-task', {
         credentials: {
             userid: {type: "text"},
             apikey: {type: "password"}
@@ -16,12 +16,12 @@
         icon: "habitica-logo.png",
         align: 'right',
         label: function () {
-            return this.taskid || "complete-daily";
+            return this.taskid || "score-task";
         }
     });
 </script>
 
-<script type="text/x-red" data-template-name="complete-daily">
+<script type="text/x-red" data-template-name="score-task">
     <div class="form-row">
         <label for="node-input-userid"><i class="icon-tag"></i> userid</label>
         <input type="text" id="node-input-userid" placeholder="userid">
@@ -33,7 +33,7 @@
 
 </script>
 
-<script type="text/x-red" data-help-name="complete-daily">
+<script type="text/x-red" data-help-name="score-task">
     <p>A simple node that can mark a daily as done</p>
 
 </script>

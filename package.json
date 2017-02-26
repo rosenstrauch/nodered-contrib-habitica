@@ -1,15 +1,15 @@
 {
-  "name": "nodered_habitica",
+  "name": "nodered_habitica_task",
   "version": "1.0.0",
   "description": "trigger completion of dailies",
-  "main": "habitica/daily.js",
+  "main": "habitica/task.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "node-red": {
     "nodes": {
-      "sample": "habitica/daily.js"
+      "habitica_task": "habitica/habitica_task.js"
     }
   },
   "license": "ISC",

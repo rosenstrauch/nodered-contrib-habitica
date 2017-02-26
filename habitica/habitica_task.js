@@ -4,7 +4,7 @@ var api = new Habitica({
 });
 
 module.exports = function (RED) {
-    function completeDailyNode(config) {
+    function scoreTaskNode(config) {
         RED.nodes.createNode(this, config);
         var node = this;
         this.userid = this.credentials.userid;
@@ -45,7 +45,7 @@ module.exports = function (RED) {
     });
     }
 
-    RED.nodes.registerType("complete-daily", completeDailyNode, {
+    RED.nodes.registerType("score-task", scoreTaskNode, {
         credentials: {
             userid: {type: "text"},
             apikey: {type: "password"}
